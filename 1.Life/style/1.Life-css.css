@@ -1,0 +1,207 @@
+﻿html, body, div, header, h1, h2, h3, h4, ul, li, nav, aside, section, footer, span, img {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 14px;  /*for calculations of the rem font-size value used below*/
+    letter-spacing: 0.1rem;
+}
+
+#wrapper {
+    position: relative;
+    width: 780px;
+    height: 385px;
+    border: 1px solid #e1ebf7;
+    background-color: #e6def5;
+    font-size: 0.7rem;  /*most of the font has this size*/
+}
+
+/*#region HEADER ------------------ */
+#site-header {
+    background-color: #fff;
+    height: 47px;
+}
+
+#site-logo {
+    display: inline-block;
+    float: left;
+}
+
+#site-title {
+    display: inline-block;
+    float: right;
+    clear: right;
+}
+/*#endregion HEADER ------------------ */
+
+/*#region name NAVIGATION ------------*/
+#navigation-main {
+    float: left;
+    padding-left: 9px;
+    background-color: #f2f3f7;
+    width: 111px;
+    height: 307px;
+}
+
+.navigation-title {
+    display: block;
+    font-size: 0.9rem;
+    color: #424284;
+    font-weight: 600;
+    margin-top: 5%;
+}
+
+#navigation-main ul li {
+    list-style-position: inside;
+}
+
+    #navigation-main ul li a {
+        text-decoration: none;
+        color: #069;
+    }
+/*#endregion NAVIGATION ------------*/
+
+/*#region MIDDLE part ------------ */
+#middle-part {
+    float: left;
+    clear: right;
+    margin: 5px 2px 2px 2px;
+}
+
+/*---------- Start of top NAVIGATION ------------*/
+#navigation-secondary img {
+    padding-left: 7px;
+    margin-bottom: -2px;
+}
+
+#navigation-secondary span {
+    color: #6d64a3;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-left: 7px;
+}
+
+#navigation-secondary ul {
+    display: inline;
+}
+
+#navigation-secondary ul li {
+    display: inline;
+    border-right: 1px solid #00c;
+}
+
+#navigation-secondary ul li:last-of-type {
+    border-right: none;
+}
+
+    #navigation-secondary ul li a {
+        text-decoration: none;
+        color: #00c;
+        padding-right: 5px;
+        padding-left:5px;
+    }
+/*---------- End of top NAVIGATION ------------*/
+
+/*---------- Start of SECTION ------------*/
+section {
+    width: 415px;
+    height: 260px;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #f9f4fd;
+    color: #4b3e82;
+}
+
+#article-image {
+    border: 1px solid #000;
+    float: left;
+    margin-right: 10px;
+}
+
+#article-titles {
+    height: 110px;
+    padding-top: 30px;
+}
+
+#article-titles h2 {
+    color: #c41e89;
+}
+
+.footer-links ul li {         /*applies as well for the aside footer links*/
+    list-style-image: url(../images/orange-bullet.png);
+    list-style-position: inside;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #00c;
+}
+/*---------- End of SECTION ------------*/
+/*#endregion MIDDLE part ------------*/
+
+/*#region ASIDE --------------- */
+aside {
+    background-color: #f9f4fd;
+    float: right;
+    clear: right;
+    width: 215px;
+    height: 301px;
+    margin: 2px;
+}
+
+    aside > ul li {
+        list-style-type: none;
+        height: 62px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+        .aside-big-links {
+            text-decoration: none;
+            
+        }
+
+            .aside-big-links img {
+                border: 1px solid #000;
+                float: left;
+                margin-right:  5px;
+            }
+
+            .aside-big-links h4 {
+                padding-top: 10px;
+                padding-right: 5px;
+            }
+
+aside footer.footer-links {
+    margin-top: 15px;
+}
+
+#aside-footer-column-1 {
+    float:left;
+    margin-left: 15px;
+    width: 41%;    /*Chrome wasn't displaying them correctly without width*/
+}
+
+#aside-footer-column-2 {
+    float:left;
+    clear: right;
+    margin-left: 15px;
+    width: 41%;    /*Chrome wasn't displaying them correctly without width*/
+}
+/*#endregion ASIDE --------------- */
+
+/*#region FOOTER --------------- */
+#footer-main {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;  
+    font-size: 0.8rem;  
+    line-height: 30px;
+    color: #ccc;
+    background-color: #4b3e82;
+}
+/*#endregion FOOTER --------------- */
